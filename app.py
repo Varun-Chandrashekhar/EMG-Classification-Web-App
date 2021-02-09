@@ -7,9 +7,6 @@ import pandas as pd
 from PIL import Image, ImageOps # Image processing
 import pickle
 
-# Visualization
-import matplotlib.pyplot as plt
-
 # Modeling and Prediction
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
