@@ -29,7 +29,7 @@ Helps Predict Speech communicated by paralyzed individuals using  Machine Learni
 """)
 
 #Open and Display an Image
-#image = Image.open('/content/gdrive/My Drive/Machine Learning Web Application/Diabetes Detection/Diabetes Detection.png')
+#image = Image.open('Diabetes Detection.png')
 #st.image(image, use_column_width=True) # caption = 'ML', 
 
 # COMPUTATION
@@ -47,7 +47,7 @@ if uploaded_file is not None:
 # Combines user input features with entire penguins dataset
 # This will be useful for the encoding phase
   with st.spinner('Processing CSV.....'):
-    letters_raw = pd.read_csv('/content/gdrive/MyDrive/Machine Learning/EMG/ML_Pattern_Recognition_Data V2.csv')
+    letters_raw = pd.read_csv('Data.csv')
     
     st.subheader('Training Data')
     st.write(letters_raw)
@@ -68,7 +68,7 @@ if uploaded_file is not None:
 
   with st.spinner('Loading Model.....'):
     # Reads in saved classification model
-    load_clf = pickle.load(open('/content/gdrive/MyDrive/Machine Learning/EMG/EMG_clf.pkl', 'rb'))
+    load_clf = pickle.load(open('EMG_clf.pkl', 'rb'))
 
   with st.spinner('Making Prediction.....'):
     # Apply model to make predictions
